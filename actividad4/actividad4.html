@@ -7,17 +7,19 @@
 </head>
 <body>
     <form>
+        <fieldset>
+            <legend>Datos personales</legend>
         <label for="name">Nombre</label>
-        <input type="text">
+        <input type="text" >
     <br>
         <label for="coreo">Correo electrónico</label>
-        <input type="email">
+        <input type="email" >
     <br>
         <label for="URL">URL</label>
-        <input type="url">
+        <input type="url" >
     <br>
         <label for="ciudad">Ciudad:</label>
-        <input type="text" id="ciudad" name="ciudad" list="lista-ciudades">
+        <input type="text" id="ciudad" name="ciudad" list="lista-ciudades" >
         <datalist id="lista-ciudades">
             <option value="Córdoba">
             <option value="Jaén">
@@ -28,18 +30,21 @@
             <option value="Huelva">
             <option value="Sevilla">
         </datalist> 
+        </fieldset>
     <br>
+    <fieldset>
+         <legend>Otros datos</legend>
         <label for="Fecha">Fecha</label>
-        <input type="date">
+        <input type="date" >
     <br>
         <label for="Tiempo">Tiempo</label>
-        <input type="time"> 
+        <input type="time" > 
     <br>
         <label for="fecha y hora">Fecha y hora</label>
-        <input type="datetime"> 
+        <input type="datetime" > 
     <br>
         <label for="mes">Mes</label>
-        <input type="month">
+        <input type="month" >
     <br>
         <label for="Semana">Semana</label>
         <input type="week">
@@ -55,14 +60,20 @@
     <br>
         <label for="Color">Color favorito</label>
         <input type="color">
+    </fieldset>
     <br>
+    <fieldset>
+            <legend>Otros controles</legend>
         <label for="Aficiones">Aficiones</label>
         <input type="checkbox">
     <br>
         <label for="Pago">Forma de pago</label>
         <input type="checkbox">
-       
+        </fieldset>
     </form>
+     <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    
 
 
 </body>
