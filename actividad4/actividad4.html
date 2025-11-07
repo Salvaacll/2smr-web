@@ -1,69 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de prueba de HTML5</title>
 </head>
 <body>
-    <form>
-        <label for="name">Nombre</label>
-        <input type="text">
-    <br>
-        <label for="coreo">Correo Electrónico</label>
-        <input type="email">
-    <br>
-        <label for="URL">URL</label>
-        <input type="url">
-    <br>
-        <label for="ciudad">Ciudad:</label>
-        <input type="text" id="ciudad" name="ciudad" list="lista-ciudades">
-        <datalist id="lista-ciudades">
-            <option value="Córdoba">
-            <option value="Jaén">
-            <option value="Almería">
-            <option value="Granada">
-            <option value="Málaga">
-            <option value="Cádiz">
-            <option value="Huelva">
-            <option value="Sevilla">
-        </datalist> 
-    <br>
-        <label for="Fecha">Fecha</label>
-        <input type="date">
-    <br>
-        <label for="Tiempo">Tiempo</label>
-        <input type="time"> 
-    <br>
-        <label for="fecha y hora">Fecha y hora</label>
-        <input type="datetime"> 
-    <br>
-        <label for="mes">Mes</label>
-        <input type="month">
-    <br>
-        <label for="Semana">Semana</label>
-        <input type="week">
-    <br>
-        <label for="numero">Número (min -10, mas 10):</label>
-        <input type="number" min="-10" max="10">
-    <br>
-        <label for="telefono">Telefono</label>
-        <input type="tel">
-    <br>
-        <label for="termino_busqueda">Termino de busqueda:</label>
-        <input type="search">
-    <br>
-        <label for="Color">Color favorito</label>
-        <input type="color">
-    <br>
-        <label for="Aficiones">Aficiones</label>
-        <input type="checkbox">
-    <br>
-        <label for="Pago">Forma de pago</label>
-        <input type="checkbox">
-       
+    <h2>Controles de formulario</h2>
+
+    <form method="GET" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required autofocus><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal"><br><br>
+
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="Almería">Almería</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Granada">Granada</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Sevilla" selected>Sevilla</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros datos</legend>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <label for="tiempo">Tiempo:</label>
+            <input type="time" id="tiempo" name="tiempo"><br><br>
+
+            <label for="datetime">Fecha y hora:</label>
+            <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes"><br><br>
+
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana"><br><br>
+
+            <label for="numero">Número (min -10, max 10):</label>
+            <input type="number" id="numero" name="numero" min="-10" max="10" value="0"><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="busqueda">Término de búsqueda:</label>
+            <input type="search" id="busqueda" name="busqueda"><br><br>
+
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color" value="#000000"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros controles</legend>
+
+            <label>Aficiones:</label><br>
+            <input type="checkbox" id="cine" name="aficiones" value="1" checked>
+            <label for="cine">Cine</label>
+            <input type="checkbox" id="deporte" name="aficiones" value="1">
+            <label for="deporte">Deporte</label><br><br>
+
+            <label>Forma de pago:</label><br>
+            <input type="radio" id="visa" name="pago" value="V">
+            <label for="visa">Visa</label>
+            <input type="radio" id="american" name="pago" value="A">
+            <label for="american">American Express</label>
+            <input type="radio" id="mastercard" name="pago" value="M">
+            <label for="mastercard">MasterCard</label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
     </form>
-
-
 </body>
 </html>
