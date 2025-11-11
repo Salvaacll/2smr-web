@@ -6,6 +6,7 @@
       h2 {
         background-color: grey;
         color: white;
+        clear:both;
 
       }
 
@@ -36,3 +37,5 @@
         background-color: white;
         font-weight: bold;
       }
+
+      /* */
