@@ -6,6 +6,7 @@
     width: 40%;
     height: auto;
     text-align: justify;
+    float:left;
 }
 
 .caja2{
@@ -17,10 +18,41 @@
     box-shadow: 5px 9px 3px gray;
     width: 40%;
     text-align: justify;
+    clear:both;
+    float:left;
 }
 
 .caja3{
+    margin: 2%;
+    padding: 20px;
+    width: 40%;
+    text-align: justify;
+    position: absolute;
+    right:0;
+    float: right;
+}
+
+p.bola{
+   
+    border:10px solid black;
+    border-image-source: url(../img/bola-100.png);
+
+
+}
+
+p.pastilla {
 
 
 
+}
+
+p.ventana {
+
+
+}
+
+p.hormiga{
+
+
+    
 }
