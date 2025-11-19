@@ -1,0 +1,58 @@
+.caja1{
+    margin:2%;
+    background-color: #f5c76c;
+    padding: 20px;
+    border: 10px solid #e7a219;
+    width: 40%;
+    height: auto;
+    text-align: justify;
+    float:left;
+}
+
+.caja2{
+    margin: 2%;
+    padding: 20px;
+    background-color: #f5c76c;
+    border: 3px dashed black;
+    border-radius: 10px 50px;
+    box-shadow: 5px 9px 3px gray;
+    width: 40%;
+    text-align: justify;
+    clear:both;
+    float:left;
+}
+
+.caja3{
+    margin: 2%;
+    padding: 20px;
+    width: 40%;
+    text-align: justify;
+    position: absolute;
+    right:0;
+    float: right;
+}
+
+p.bola{
+   
+    border:10px solid black;
+    border-image-source: url(../img/bola-100.png);
+
+
+}
+
+p.pastilla {
+
+
+
+}
+
+p.ventana {
+
+
+}
+
+p.hormiga{
+
+
+    
+}
