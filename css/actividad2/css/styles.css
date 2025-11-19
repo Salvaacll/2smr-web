@@ -36,23 +36,34 @@ p.bola{
    
     border:10px solid black;
     border-image-source: url(../img/bola-100.png);
-
-
 }
 
 p.pastilla {
-
-
+    padding: 20px;
+    border: 25px solid transparent;
+    border-image-source: url("../img/pastilla.png");
+    border-image-slice: 25;   
+    border-image-repeat: stretch;             
 
 }
 
 p.ventana {
+    
+    border:20px solid ;
+    border-image-source: url(../img/ventana.png);
+    border-image-slice: 40 18 18 18;
+    border-image-width: 30px;
 
 
 }
 
 p.hormiga{
-
+  border: 12px solid transparent;
+    border-image-source: url(../img/hormigas.png);
+    border-image-slice: 16 fill;
+    border-image-repeat: repeat;
+    border-image-width: 12px;
+    padding: 10px;
 
     
 }
