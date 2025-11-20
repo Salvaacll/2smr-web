@@ -49,7 +49,7 @@ p.pastilla {
 
 p.ventana {
     
-    border:20px solid ;
+    border:40px solid;
     border-image-source: url(../img/ventana.png);
     border-image-slice: 40 18 18 18;
     border-image-width: 30px;
@@ -58,12 +58,10 @@ p.ventana {
 }
 
 p.hormiga{
-  border: 12px solid transparent;
-    border-image-source: url(../img/hormigas.png);
-    border-image-slice: 16 fill;
-    border-image-repeat: repeat;
-    border-image-width: 12px;
-    padding: 10px;
+background-image: url(../img/hormigas.png);
+border-image-repeat: repeat;
+border-image:stretch;
+   
 
-    
+
 }
