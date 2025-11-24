@@ -45,9 +45,40 @@ font-size: 20px;
 
 }
 
+.caja1{
+    border: 3px solid blue;
+    position: relative;
+    margin: 10em;
+    width: 35%;
+    color:green;
+    padding: 1em;
+    line-height: 2em;
+}
+
+.titulocaja1{
+    font-size: 19px;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
 .caja2{
 
- box-shadow: 20px;
-
+    position:relative;
+    border: 3px solid blue;
+    width: 30%;
+    float: right;
     
+
+}
+
+.izquierda{
+
+width: 20%;
+
+}
+
+.derecha{
+
+width: 15%;
+
 }
