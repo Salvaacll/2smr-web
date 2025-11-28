@@ -16,12 +16,14 @@ font-size: 60px;
 
 }
 
+
+
 li {
 
     display: inline;
     padding: 10px;
     font-size: 20px;
-    
+   
 }
 
 .links {
@@ -30,7 +32,7 @@ li {
     width: 80%; 
     padding-top: 1em;
     padding-bottom: 1em;
-    margin: 15px;
+    margin: 15px; 
 
 }
 
@@ -41,7 +43,6 @@ li {
             margin-left: 1em;
             padding: 1em;
             font-size: 20px;
-
 
 }
 
@@ -94,5 +95,13 @@ font-size: 19px;
 .dentro2{
 
 
+
+}
+
+
+footer {
+    
+    position: fixed;
+    bottom: 0;
 
 }
