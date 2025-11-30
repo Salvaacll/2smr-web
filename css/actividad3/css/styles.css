@@ -16,12 +16,14 @@ font-size: 60px;
 
 }
 
+
+
 li {
 
     display: inline;
     padding: 10px;
     font-size: 20px;
-    
+   
 }
 
 .links {
@@ -30,55 +32,76 @@ li {
     width: 80%; 
     padding-top: 1em;
     padding-bottom: 1em;
-    margin: 15px;
+    margin: 15px; 
 
 }
 
 .destacado{
-border: 4px dashed orange;
-background-color: rgba(235, 218, 218, 0.774);
-width: 80%;
-margin-left: 1em;
-padding: 1em;
-font-size: 20px;
-
+            border: 4px dashed orange;
+            background-color: rgba(235, 218, 218, 0.774);
+            width: 80%;
+            margin-left: 1em;
+            padding: 1em;
+            font-size: 20px;
 
 }
 
-.caja1{
-    border: 3px solid blue;
-    position: relative;
-    margin: 10em;
-    width: 35%;
-    color:green;
-    padding: 1em;
-    line-height: 2em;
+.centrado {
+            text-align: center;        
+            width: 75%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+.caja{ 
+            display: inline-block;
+            width: 35%;
+            text-align: left;
+            border: 3px solid blue;
+            padding: 15px;
+            margin: 20px;
+            color: green;
 }
 
 .titulocaja1{
-    font-size: 19px;
-    text-decoration:underline;
-    font-weight: bold;
+font-size: 19px;
+            text-decoration: underline;
+            font-weight: bold;
 }
 
-.caja2{
-
-    position:relative;
-    border: 3px solid blue;
-    width: 30%;
-    float: right;
-    
-
-}
-
-.izquierda{
-
-width: 20%;
+.izquierda{        
+    width: 15%;
+            float: left;
+            margin-right: 10px;
 
 }
 
 .derecha{
 
-width: 15%;
+            width: 15%;
+            float: right;
+            margin-left: 10px;
+}
+
+.dentro1{
+
+    color:rgb(1, 99, 1);
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 20%;
+}
+
+.dentro2{
+
+
+
+}
+
+
+footer {
+    
+    position: fixed;
+    bottom: 0;
 
 }
