@@ -1,0 +1,32 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+        'nav_izq   main     main    aside'
+        'nav-izq    footer  footer  footer footer';
+
+    gap: 1rem;
+}
+
+.cabecera {
+
+    grid-area: header;
+    background-color: green;
+    color:white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.barra_lateral_izq{
+
+    
+
+
+}
