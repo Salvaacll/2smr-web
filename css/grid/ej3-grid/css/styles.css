@@ -9,8 +9,9 @@
 
     display: grid;
     grid-template-areas: 'header header header header header header'
-        'nav_izq   main     main    aside'
-        'nav-izq    footer  footer  footer footer';
+        'main   main     main    main     main    aside'
+        'nav-izq     nav-dcha    nav-dcha  nav-dcha    nav-dcha  nav-dcha'
+        'footer     footer      footer      footer      footer      footer';
 
     gap: 1rem;
 }
@@ -24,9 +25,34 @@
     padding: 1rem;
 }
 
-.barra_lateral_izq{
-
+.nav-izq{
+ grid-area: nav-izq;
+    background-color: green;
+    color:white;
+    text-align: center;
+    padding: 1rem;
     
+
+
+}
+
+.nav-dcha {
+ grid-area: nav-dcha;
+    background-color: green;
+    color:white;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.footer {
+
+ grid-area: footer;
+    background-color: green;
+    color:white;
+    text-align: center;
+    padding: 1rem;
+
 
 
 }
