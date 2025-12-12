@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes Examen HTML y CSS</title>
+     <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Apuntes para Examen de HTML y CSS</h1>
+        <p>Flexbox, Grid, Float, Tablas, Formularios y más</p>
+    </header>
+    
+    <div class="container">
+        <h2>1. Flexbox (Caja Flexible)</h2>
+        <p>Flexbox es un modelo de layout unidimensional para diseñar estructuras flexibles.</p>
+        
+        <div class="tip">
+            <strong>Propiedades principales:</strong> display: flex, flex-direction, justify-content, align-items, flex-wrap
+        </div>
+        
+        <div class="flex-container">
+            <div class="flex-item">Elemento 1</div>
+            <div class="flex-item">Elemento 2</div>
+            <div class="flex-item">Elemento 3</div>
+            <div class="flex-item">Elemento 4</div>
+        </div>
+        
+        <div class="code-example">
+/* Contenedor Flex */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Elementos Flex */
+.flex-item {
+    flex: 1 1 200px; /* grow, shrink, basis */
+    background-color: #1a2a6c;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>2. CSS Grid</h2>
+        <p>Grid es un modelo de layout bidimensional para diseñar estructuras en filas y columnas.</p>
+        
+        <div class="tip">
+            <strong>Propiedades principales:</strong> display: grid, grid-template-columns, grid-template-rows, gap, grid-column, grid-row
+        </div>
+        
+        <div class="grid-container">
+            <div class="grid-item">Elemento A</div>
+            <div class="grid-item">Elemento B</div>
+            <div class="grid-item">Elemento C</div>
+            <div class="grid-item">Elemento D</div>
+            <div class="grid-item">Elemento E</div>
+            <div class="grid-item">Elemento F</div>
+        </div>
+        
+        <div class="code-example">
+/* Contenedor Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 15px; /* espacio entre elementos */
+}
+
+/* Elementos Grid */
+.grid-item {
+    background-color: #b21f1f;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>3. Float (Flotar elementos)</h2>
+        <p>Float permite que un elemento se coloque a la izquierda o derecha, y el texto fluya alrededor.</p>
+        
+        <div class="tip">
+            <strong>Propiedades:</strong> float: left, float: right, clear: both
+        </div>
+        
+        <div class="float-section">
+            <div class="float-left">Elemento flotante a la izquierda</div>
+            <div class="float-right">Elemento flotante a la derecha</div>
+            <p>Este texto fluye alrededor de los elementos flotantes. Float es una técnica antigua pero aún útil para ciertos casos. Con la llegada de Flexbox y Grid, el uso de float para layouts ha disminuido, pero sigue siendo útil para imágenes dentro de texto o efectos específicos.</p>
+            <p>Es importante recordar que después de usar elementos float, debemos limpiar el flujo con clear: both o overflow: auto en el contenedor padre para evitar problemas de layout.</p>
+            <div style="clear: both;"></div>
+        </div>
+        
+        <div class="code-example">
+/* Elementos flotantes */
+.float-left {
+    float: left;
+    width: 150px;
+    margin-right: 15px;
+}
+
+.float-right {
+    float: right;
+    width: 150px;
+    margin-left: 15px;
+}
+
+/* Limpiar floats */
+.float-section {
+    overflow: auto; /* Esto limpia los floats */
+}
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>4. Tablas en HTML</h2>
+        <p>Las tablas se utilizan para mostrar datos tabulares. Usa las etiquetas &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>García</td>
+                    <td>28</td>
+                    <td>Madrid</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>López</td>
+                    <td>35</td>
+                    <td>Barcelona</td>
+                </tr>
+                <tr>
+                    <td>María</td>
+                    <td>Rodríguez</td>
+                    <td>22</td>
+                    <td>Valencia</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Sánchez</td>
+                    <td>40</td>
+                    <td>Sevilla</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="code-example">
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nombre&lt;/th&gt;
+            &lt;th&gt;Apellido&lt;/th&gt;
+            &lt;th&gt;Edad&lt;/th&gt;
+            &lt;th&gt;Ciudad&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ana&lt;/td&gt;
+            &lt;td&gt;García&lt;/td&gt;
+            &lt;td&gt;28&lt;/td&gt;
+            &lt;td&gt;Madrid&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;!-- Más filas --&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>5. Formularios en HTML</h2>
+        <p>Los formularios permiten capturar datos del usuario. Usa las etiquetas &lt;form&gt;, &lt;input&gt;, &lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;, etc.</p>
+        
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona un país</option>
+                        <option value="es">España</option>
+                        <option value="mx">México</option>
+                        <option value="ar">Argentina</option>
+                        <option value="co">Colombia</option>
+                        <option value="pe">Perú</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Género:</label>
+                    <div>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino" style="display: inline; font-weight: normal;">Masculino</label>
+                        
+                        <input type="radio" id="femenino" name="genero" value="femenino" style="margin-left: 15px;">
+                        <label for="femenino" style="display: inline; font-weight: normal;">Femenino</label>
+                        
+                        <input type="radio" id="otro" name="genero" value="otro" style="margin-left: 15px;">
+                        <label for="otro" style="display: inline; font-weight: normal;">Otro</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Intereses:</label>
+                    <div>
+                        <input type="checkbox" id="web" name="intereses" value="web">
+                        <label for="web" style="display: inline; font-weight: normal;">Desarrollo Web</label>
+                        
+                        <input type="checkbox" id="movil" name="intereses" value="movil" style="margin-left: 15px;">
+                        <label for="movil" style="display: inline; font-weight: normal;">Apps Móviles</label>
+                        
+                        <input type="checkbox" id="diseno" name="intereses" value="diseno" style="margin-left: 15px;">
+                        <label for="diseno" style="display: inline; font-weight: normal;">Diseño UI/UX</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Enviar Formulario</button>
+                    <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="code-example">
+&lt;form action="#" method="post"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="nombre"&gt;Nombre completo:&lt;/label&gt;
+        &lt;input type="text" id="nombre" name="nombre" required&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="form-group"&gt;
+        &lt;label for="email"&gt;Correo electrónico:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="form-group"&gt;
+        &lt;label for="pais"&gt;País:&lt;/label&gt;
+        &lt;select id="pais" name="pais"&gt;
+            &lt;option value=""&gt;Selecciona un país&lt;/option&gt;
+            &lt;option value="es"&gt;España&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Más elementos del formulario --&gt;
+    
+    &lt;button type="submit"&gt;Enviar Formulario&lt;/button&gt;
+&lt;/form&gt;
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>6. Conceptos Básicos de HTML y CSS</h2>
+        
+        <h3>Estructura básica de HTML</h3>
+        <div class="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+    &lt;link rel="stylesheet" href="estilos.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Mi página web&lt;/h1&gt;
+    &lt;p&gt;Contenido de la página&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </div>
+        
+        <h3>Selectores CSS comunes</h3>
+        <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li><strong>selector de elemento</strong>: p { color: blue; }</li>
+            <li><strong>selector de clase</strong>: .clase { font-size: 16px; }</li>
+            <li><strong>selector de ID</strong>: #id { background-color: yellow; }</li>
+            <li><strong>selector descendente</strong>: div p { margin: 10px; }</li>
+            <li><strong>selector de atributo</strong>: input[type="text"] { border: 1px solid #ccc; }</li>
+        </ul>
+        
+        <h3>Box Model (Modelo de caja)</h3>
+        <p>Todo elemento en HTML es una caja con: contenido, padding, border y margin.</p>
+        <div style="background-color: #e9f7fe; padding: 15px; border-radius: 8px; margin: 15px 0;">
+            <p><strong>Contenido:</strong> El contenido real (texto, imagen, etc.)</p>
+            <p><strong>Padding:</strong> Espacio interno entre el contenido y el borde</p>
+            <p><strong>Border:</strong> Línea que rodea el padding y contenido</p>
+            <p><strong>Margin:</strong> Espacio externo entre este elemento y otros</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Apuntes para examen de HTML y CSS - Incluye ejemplos de Flexbox, Grid, Float, Tablas y Formularios</p>
+        <p>¡Buena suerte en tu examen! Recuerda practicar estos conceptos.</p>
+    </footer>
+</body>
+</html>
