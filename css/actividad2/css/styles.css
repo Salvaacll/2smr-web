@@ -1,8 +1,8 @@
 .caja1{
     margin:2%;
-    background-color: #f5c76c;
+    background-color: #f5c565;
     padding: 20px;
-    border: 10px solid #e7a219;
+    border: 10px solid #f5c565;
     width: 40%;
     height: auto;
     text-align: justify;
@@ -12,7 +12,7 @@
 .caja2{
     margin: 2%;
     padding: 20px;
-    background-color: #f5c76c;
+    background-color: #f5c565;
     border: 3px dashed black;
     border-radius: 10px 50px;
     box-shadow: 5px 9px 3px gray;
@@ -47,6 +47,16 @@ p.pastilla {
 
 }
 
+p.hormiga{
+    border: 10px solid black;
+    border-image-source: url(../img/hormigas.png)  ;
+    border-image-repeat:stretch;
+    border-image-slice: 70;
+    border-image-width: 4;
+    padding: 40px;
+
+}
+
 p.ventana {
     
     border:50px solid;
@@ -57,12 +67,4 @@ p.ventana {
 
 }
 
-p.hormiga{
-    border: 10px solid black;
-    border-image-source: url(../img/hormigas.png)  ;
-    border-image-repeat:stretch;
-    border-image-slice: 70;
-    border-image-width: 4;
-    padding: 40px;
 
-}
