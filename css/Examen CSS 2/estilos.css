@@ -1,0 +1,362 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: 3px solid #00ff88;
+    align-items: center;
+    padding: 20px 40px;
+    
+   
+}
+
+body {
+
+    background-color: #252525;
+
+}
+
+ul {
+
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin-left: 85%
+    
+    
+
+}
+
+.gaming {
+
+    margin-left: 0%
+}
+
+li a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+     
+
+}
+
+li :hover {
+
+    color: #00ff88;
+
+}
+
+.main1{
+
+    display: flex;
+    background-color:#2c2a2a
+
+}
+
+.texto{
+
+    background-color: #2c2a2a;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0%;
+}
+
+.texto h2 {
+
+    color: white;
+
+}
+
+.texto p {
+
+    color: white;
+
+}
+
+
+.login{
+
+    border: #00ff88 2px solid;
+    width: 300px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+
+.login h2{
+
+    color: white;
+    text-align: center;
+
+}
+
+.login label{
+
+    color: white;
+
+}
+
+input {
+
+    background-color: #252525;
+
+}
+
+#text{
+    
+    width: 100%;
+    margin-bottom: 15px ;
+
+}
+
+.boton {
+
+    background-color: #00ff88;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 40px;
+    font-weight: bold;
+
+}
+
+.boton:hover{
+
+    background-color: white;
+    color: #00ff88;
+
+}
+
+header h2{
+
+    color: white;
+
+}
+
+
+.main2{
+
+    background-color: #252525;
+    width: 60%;
+    
+}
+
+.main2 h2{
+
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+   
+
+}
+
+hr{
+
+    margin-bottom: 30px;
+    border-color: #333;
+
+}
+
+
+.productos {
+
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+    'teclado'
+    'raton'
+    'monitor'
+    'cascos'
+    ;
+  
+     .teclado {grid-area: 1 /span 1;}
+     .raton {grid-area: 1 /span 1;}
+     .monitor {grid-area: 2 /span 1;}
+     .cascos {grid-area: 2 /span 1;}
+    
+}
+
+
+.teclado{
+
+    grid-area: teclado;
+    display: grid;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+   
+    
+   
+}
+
+.teclado h3{
+
+    color: white;
+    margin-top: 10px;
+
+}
+
+.teclado p {
+
+    color: #00ff88;
+    margin: 10px
+
+}
+
+.teclado img {
+    width: 50%;
+}
+
+
+.raton{
+
+    grid-area: raton;
+    display: grid;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+  
+   
+}
+.raton h3{
+
+    color: white;
+    margin-top: 10px;
+
+}
+
+.raton p {
+
+    color: #00ff88;
+    margin: 10px
+
+}
+
+
+
+.raton img {
+    width: 50%;
+}
+
+.monitor{
+
+    grid-area: monitor;
+    display: grid;
+    border: 1px solid gray;
+        border-radius: 8px;
+    padding: 15px;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    
+   
+}
+.monitor h3{
+
+    color: white;
+    margin-top: 10px;
+
+}
+
+.monitor p {
+
+    color: #00ff88;
+    margin: 10px
+
+}
+.monitor img {
+    width: 50%;
+}
+
+.cascos{
+
+    grid-area: cascoso;
+    display: grid;
+    border: 1px solid gray;
+        border-radius: 8px;
+    padding: 15px;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+ 
+   
+}
+
+.cascos h3{
+
+    color: white;
+    margin-top: 10px;
+
+}
+
+.cascos p {
+
+    color: #00ff88;
+    margin: 10px
+
+}
+
+.cascos img {
+    width: 50%;
+}
+
+
+.teclado:hover{
+    transform: translateY(-5px);
+    border-color: #00ff88;
+
+}
+
+.raton:hover{
+ transform: translateY(-5px);
+    border-color: #00ff88;
+
+}
+
+.monitor:hover{
+    transform: translateY(-5px);
+    border-color: #00ff88;
+
+}
+
+.cascos:hover{
+
+ transform: translateY(-5px);
+    border-color: #00ff88;
+
+}
+
+
+footer{
+
+    display: flex;
+    background-color: black;
+    color: gray;
+    text-align: center;
+    min-height: 60px;
+
+
+}
+
+footer a {
+    
+    color:#00ff88;
+
+}
