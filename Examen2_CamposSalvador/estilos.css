@@ -1,14 +1,14 @@
-*{
+* {
 
-	border-sizing: border-box;
-	max-width: 90%;
-	font-style: 'Segoe UI','sans-serif';
+	box-sizing: border-box;
+	max-width: 100%;
+	font-family: 'Segoe UI', 'sans-serif';
 
 }
 
 body {
 
-	background-color: #f1f5f9;
+	background-color: #afafb9;
 	color: #1f2933;
 }
 
@@ -16,34 +16,56 @@ header {
 	max-width: 100%;
 	background-color: rgb(11, 18, 32);
 	display: flex;
+	color: white;
 
 }
+
+
 
 .menu {
-
+	grid-area: menu;
 	background-color: rgb(37, 99, 235);
 
 }
 
-.boton{
+.boton {
 
 	background-color: rgb(37, 99, 235);
+	width: 100%;
+	margin-top: 10px
+}
+
+
+
+.boton2 {
+
+	background-color: rgb(37, 99, 235);
+	margin-bottom: 5%;
+	color: white;
+	border-color: rgb(37, 99, 235);
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	padding-bottom: 10px;
 
 }
 
-.boton2{
+.boton2:hover {
 
-	background-color: rgb(37, 99, 235);
+	background-color: rgb(21, 10, 165);
 
 }
 
 .inicio {
 
 	border: 1px solid rgb(37, 99, 235);
-	
+	border-radius: 5px;
 	text-align: center;
-	justify-items: flex-end;
-
+	align-items: ;
+	min-height: 30px;
+	min-width: 60px;
+	align-content: center;
+	align-items: center;
+	margin-top: 50%;
 }
 
 .imagen-cabecera {
@@ -51,7 +73,7 @@ header {
 	max-width: 30%;
 	max-height: 30%;
 	margin-top: 10px;
-	
+
 }
 
 .cabecera {
@@ -59,3 +81,290 @@ header {
 	display: flex;
 	justify-content: space-around;
 }
+
+.cabecera2 {
+
+	margin-left: 70%;
+
+}
+
+.cabecera1 {
+
+	margin-left: 45%;
+
+}
+
+
+ul {
+
+	list-style: none;
+	display: flex;
+
+
+
+}
+
+li {
+
+	text-decoration: none;
+	margin: 10%;
+
+
+}
+
+
+.menu {
+
+	font-weight: bold;
+	color: white;
+	justify-items: center;
+
+
+}
+
+.contenido {
+
+	gap: 10px;
+	display: grid;
+	/* Pongo esta parte con grid para poder posicionar de una manera más facil los 2 divs*/
+	grid-template-areas:
+
+		'contenido'
+		'aside'
+	;
+
+	.contenido {grid-area: 1 /span 4;}
+	.aside {grid-area: 1 /span 2;}
+	/*He puesto que ocupe 4 el contenido y 2 el aside, aunque no quede exactamente como en el ejemplo,
+	ya que es lo mas exacto que he encontrado utilizando grid  */
+}
+
+.aside {
+
+	grid-area: aside;
+	background-color: #e6e9dc7f;
+	display: grid;
+	max-height: 90%;
+	grid-template-areas:
+		'ticket'
+		'sistema1'
+		'sistema2'
+	;
+
+	.ticket {grid-area: 1 /span 6;}
+	.sistema1 {grid-area: 2 /span 6;}
+	.sistema2 {grid-area: 3 /span 6;}
+
+
+}
+
+.sistema1 h1 {
+
+	font-size: 20px;
+	background-color: #e6e9dc7f;
+
+}
+
+
+.sistema2 h1 {
+
+	font-size: 20px;
+	background-color: #e6e9dc7f;
+
+}
+
+main {
+
+	grid-area: contenido;
+	display: grid;
+	margin-bottom: 0;
+	/* Aquí he utilizado grid de una manera muy sencilla para poner las 4 cajas y que cada una ocupe 2*/
+	grid-template-areas:
+		'sistemas'
+		'redes'
+		'seguridad'
+		'web'
+	;
+
+	.sistemas {grid-area: 1 /span 2;}
+	.redes {grid-area: 1 /span 2;}
+	.seguridad {grid-area: 2 /span 2;}
+	.web {grid-area: 2 /span 2;}
+	gap: 20px;
+
+	place-items: center;
+
+}
+
+
+.sistemas {
+	/* Ahora he definido la tarjeta Sistemas poniendo los estilos correspondientes y lo he 
+	reutilizado para el resto de tarjetas ya que son iguales */
+	grid-area: sistemas;
+	justify-items: center;
+	display: grid;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+
+
+}
+
+.redes {
+
+	grid-area: redes;
+	justify-items: center;
+	display: grid;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.seguridad {
+
+	grid-area: seguridad;
+	justify-items: center;
+	display: grid;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.web {
+
+	grid-area: web;
+	justify-items: center;
+	display: grid;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+
+
+}
+
+.redes img {
+	/* Aquí estoy haciendo que las imagenes dentro de la clase redes tengas los siguientes estilos */
+	max-width: 30%;
+	border-radius: 20px;
+	padding: 5px;
+	margin-top: 2%;
+
+
+}
+
+.sistemas img {
+
+	max-width: 30%;
+	border-radius: 20px;
+	padding: 5px;
+	margin-top: 2%;
+}
+
+.seguridad img {
+	max-width: 30%;
+	border-radius: 20px;
+	padding: 5px;
+	margin-top: 2%;
+}
+
+.web img {
+
+	max-width: 30%;
+	border-radius: 20px;
+	padding: 5px;
+	margin-top: 2%;
+}
+
+.sistemas h3 {
+
+	/* Aquí unicamente estoy definiendo el titulo de cada tarjeta, creo que se podria hacer de 
+	una manera mas compacta pero no me acordaba como y he hecho uno para cada tarjeta */
+	background-color: rgba(11, 18, 32, 0.72);
+	color: white;
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+
+}
+
+.redes h3 {
+
+	background-color: rgba(11, 18, 32, 0.72);
+	color: white;
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+
+}
+
+.web h3 {
+	background-color: rgba(11, 18, 32, 0.72);
+	color: white;
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+
+}
+
+.seguridad h3 {
+	background-color: rgba(11, 18, 32, 0.72);
+	color: white;
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+
+}
+
+footer {
+	grid-area: footer;
+	background-color: black;
+	color: white;
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+@media (max-width: 800px) {
+	.contenido {
+		flex-direction: column;
+	}
+
+	
+
+	.sistemas, .redes, .seguridad, .web {
+		width: 100%;
+	}
+}
+
+/*He intentado el responsive pero lo unico que he conseguido ha sido poner todo en una columna pero se solapaban las tarjetas y 
+lo he quitado ya que no se veia bien*/

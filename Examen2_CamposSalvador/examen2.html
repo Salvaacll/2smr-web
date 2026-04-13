@@ -9,14 +9,18 @@
 <body>
 
 	<header id="indice"> 
-		<div class="cabecera">
-			<img src="./img/logo.png" class="imagen-cabecera">
-			<h2> Servicios IT </h2>
-			
-		</div>
-		<br>
 		<div>
+			<div class="cabecera">
+		
+				<img src="./img/logo.png" class="imagen-cabecera">
+		
+				<h2> Servicios IT </h2>
+				
+			</div>
 			
+			<div class="cabecera1">
+				<p>Gestión de infraestructura</p>
+			</div>
 		</div>
 		<div class="cabecera2"> 
 			<p class="inicio">Inicio </p>
@@ -25,96 +29,98 @@
 
 
 	<div class="menu">
-
-		<a> Dashboard</a>
-		<a>Inventario</a>
-		<a> Usuarios</a>
-		<a>Reportes</a>
-
+		<ul>
+			<li> Dashboard</li>
+			<li>Inventario</li>
+			<li> Usuarios</li>
+			<li>Reportes</li>
+		</ul>
 	</div>
 
+	<div class="contenido">
+		<div class="aside">
+			
+			<div class="ticket">
+				<h4>Asignar Ticket</h4>
+				<form>				
+					<label for="profesion">Técnico</label>
+					<br>
+					<input type="text" id="Técnico" list="lista-profesiones"> <!-- Poniendo la lista desplegable que se pide en el ejercicio-->
+							<datalist id="lista-profesiones">
+							<option value="Sistemas">
+							<option value="Redes">
+							<option value="Web">
+							<option value="Seguridad">
+						</datalist> 
+						<br>
+						<br>
+					<label for="profesion">Prioridad</label>
+					<br>
+					<input type="text" id="prioridad" list="lista-prioridad">
+							<datalist id="lista-prioridad">
+							<option value="Alta">
+							<option value="Media">
+							<option value="Baja">
+						</datalist> 
+						<br>
+						<button class="boton">Asignar</button>
+				</form>
+			</div>
+			<div class="sistema1">
+				
+				<h1>Info del Sistema 1</h1>
+				
+			</div>
+			<div class="sistema2">
+				
+				<h1>Info del Sistema 2</h1>
+				
+			</div>
 
-	<div class="aside">
+
+		</div>
+
+
+		<main>
+			<!--Poniendo todas las tarjetas con su titulo, imagen, descripción y botón correspondiente-->
+			<div class="sistemas">
+				<h3>Sistemas</h3>
+				<img src="./img/sistemas.jpg">
+				<p>Mantenimiento de servidores y virtualización</p>
+				<button class="boton2"> Gestionar</button>
+
+			</div>
+			<div class="redes">
+				<h3>Redes</h3>
+				<img src="./img/red.jpg">
+				<p>Configuración de routing y switching avanzado</p>
+				<button class="boton2"> Gestionar</button>
+			</div>
+			<div class="seguridad">
+				<h3>Seguridad</h3>
+				<img src="./img/seguridad.jpg">
+				<p>Auditoría de perimetros y firewalls</p>
+				<button class="boton2"> Gestionar</button>
+
+				
+			</div>
+
+			<div class="web">
+				
+				<h3>Web/Apps</h3>
+				<img src="./img/web.jpg">
+				<p>Despliegue de aplicaciones en la nube</p>
+				<button class="boton2"> Gestionar</button>
+				
+			</div>
+
 		
-		<div>
-			<h4>Asignar Ticket</h4>
-			<form>				
-				<label for="profesion">Técnico</label>
-	        	<input type="text" id="Técnico" list="lista-profesiones">
-			        	<datalist id="lista-profesiones">
-			            <option value="Sistemas">
-			            <option value="Redes">
-			            <option value="Web">
-			            <option value="Seguridad">
-		        	</datalist> 
-		        	<br>
-		        	<br>
-		        <label for="profesion">Prioridad</label>
-	        	<input type="text" id="prioridad" list="lista-prioridad">
-			        	<datalist id="lista-prioridad">
-			            <option value="Alta">
-			            <option value="Media">
-			            <option value="Baja">
-		        	</datalist> 
-		        	<br>
-		        <button class="boton">Asignar</button>
-		     </form>
-		</div>
-		<div>
-			
-			<h1>INfo del Sistema 1</h1>
-			
-		</div>
-		<div>
-			
-			<h1>INfo del Sistema 2</h1>
-			
-		</div>
 
-
+		</main>
 	</div>
-
-
-	<main>
-		
-		<div class="sistemas">
-			<h3>Sistemas</h3>
-			<img src="./img/sistemas.jpg">
-			<p>Mantenimiento de servidores y virtualización</p>
-			<button class="boton2"> Gestionar</button>
-
-		</div>
-		<div>
-			<h3>Redes</h3>
-			<img src="./img/red.jpg">
-			<p>Configuración de routing y switching avanzado</p>
-			<button class="boton2"> Gestionar</button>
-		</div>
-		<div>
-			<h3>Seguridad</h3>
-			<img src="./img/seguridad.jpg">
-			<p>Auditoría de perimetros y firewalls</p>
-			<button class="boton2"> Gestionar</button>
-
-			
-		</div>
-
-		<div>
-			
-			<h3>Web/Apps</h3>
-			<img src="./img/web.jpg">
-			<p>Despliegue de aplicaciones en la nube</p>
-			<button class="boton2"> Gestionar</button>
-			
-		</div>
-
-	
-
-	</main>
-
 	<footer>
 			
-		<p>Salvador Campos López - Copyright &copy; 2026 <a href="https://iesmedinaazahara.es"> Ies Medina Azahara</a> <a href="#indice"> Volver al Indice</a></p>
+		<p>Salvador Campos López - Copyright &copy; 2026 <a href="https://iesmedinaazahara.es" target="_blank"> Ies Medina Azahara</a> Volver al <a href="#indice"> Indice</a></p>
 
 	</footer>
 
