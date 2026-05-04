@@ -1,28 +1,40 @@
+/* Estilos generales */
+
 *{
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
 }
+:root{
+    --color-primario: #2F3E6B;
+    --color-secundario: #3B4C82;
+    --color-secundario-texto: #00E0E5;
+    --color-fondo: #2F3E6B;
+    --color-texto: #fafafa;
+    --color-boton: #00C2C7;
+}
 
 header{
-    background-color: #0B2545;
+    background-color: var(--color-primario);
     min-height: 30vh;
 }
 
 main{
-    background-color: #EEF2F7;
+    background-color: var(--color-fondo);
     padding: 5vh 0;
 }
 
 footer{
-    background-color: #0B2545;
-    color: #fafafa;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
     min-height: 10vh;
     align-content: center;
     text-align: center;
     
 }
+
+/* header*/
 div.logo{
     width: 20%;
     display: flex;
@@ -56,12 +68,12 @@ ul.lista-nav{
 
 .lista-nav li a{
    text-decoration: none; 
-   color: #fafafa;
+   color: var(--color-texto);
    
 }
 
 .lista-nav li a:hover{
-    color: #01d4d6;
+    color: var(--color-secundario-texto);
     transition: 0.3s;
 }
 
@@ -86,100 +98,36 @@ div.equipos>a>div{
     height: 30px;
     zoom: 1.6;
 }
+/* Equipos header */
+.albacete{ background-position: 0px -930px;}
+.almeria{background-position: 0px -30px;}
+.burgos{ background-position: 0px -990px;}
+.cadiz{ background-position: 0px -1140px;}
+.castellon{ background-position: 0px -1110px;}
+.ceuta{ background-position: 0px -1710px;}
+.leganes{ background-position: 0px -1020px;}
+.cultural{ background-position: 0px -1380px;}
+.cordoba{background-position: 0px -660px;}
+.granada{background-position: 0px -300px;}
+.malaga{ background-position: 0px -360px}
+.mirandes{  background-position: 0px -840px;}
+.palmas{background-position: 0px -780px;}
+.racing-santander{ background-position: 0px -960px;}
+.depor{background-position: 0px -690px;}
+.gijon{background-position: 0px -870px;}
+.zaragoza{background-position: 0px -900px;}
+.eibar{ background-position: 0px -720px;}
+.huesca{ background-position: 0px -1050px;}
+.valladolid{ background-position: 0px -570px;}
+.andorra{background-position: 0px -1680px;}
+.real-sociedad{ background-position: 0px -1650px;}
 
-.albacete{
-    
-    background-position: 0px -930px;
+
+/* Inicio arriba*/
+
+.inicio-div-general{
+    display: flex;
 }
-
-.almeria{
-    background-position: 0px -30px;
-}
-
-.burgos{
-    background-position: 0px -990px;
-}
-
-.cadiz{
-
-    background-position: 0px -1140px;
-}
-
-.castellon{
-       background-position: 0px -1110px;
-}
-
-.ceuta{
-        background-position: 0px -1710px;
-}
-
-.leganes{
-        background-position: 0px -1020px;
-}
-
-.cultural{
-        background-position: 0px -1380px;
-}
-
-.cordoba{
-        background-position: 0px -660px;
-}
-
-.granada{
-
-    background-position: 0px -300px;
-}
-
-.malaga{
-    background-position: 0px -360px;
-
-}
-
-.mirandes{
-        background-position: 0px -840px;
-}
-
-.palmas{
-
-    background-position: 0px -780px;
-}
-
-.racing-santander{
-        background-position: 0px -960px;
-}
-
-.depor{
-    background-position: 0px -690px;
-}
-
-.gijon{
-   background-position: 0px -870px;
-}
-
-.zaragoza{
-        background-position: 0px -900px;
-}
-
-.eibar{
-        background-position: 0px -720px;
-}
-
-.huesca{
-       background-position: 0px -1050px;
-}
-
-.valladolid{
-       background-position: 0px -570px;
-}
-
-.andorra{
-    background-position: 0px -1680px;
-}
-
-.real-sociedad{
-    background-position: 0px -1650px;
-}
-
 
 .top-inicio{
 
@@ -192,8 +140,9 @@ div.equipos>a>div{
 
 .top-inicio h2{
     color: #ffffff;
-    font-size: 3.4rem;
+    font-size: 3.0rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .top-inicio p{
@@ -201,14 +150,22 @@ div.equipos>a>div{
     font-size: 1.4rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
+    text-align: center;
 }
 
-
+.inicio-div-derecha{
+    width: 30%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-primario);
+}
 
 .boton{
     display: inline-block;
-    background-color: #0B2545;
-    color: #ffffff;
+    background-color: var(--color-boton);
+    color: var(--color-texto);
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -217,27 +174,18 @@ div.equipos>a>div{
 }
 
 .boton:hover {
- background-color: #fff;
-color: #0B2545;
+ background-color: var(--color-secundario);
+color: var(--color-texto);
 }
 
-.inicio-div-general{
-    display: flex;
-}
 
-.inicio-div-derecha{
-    background-image: url(./img/background-img-inicio-derecha.png);
-    width: 30%;
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 
+/* Caja derecha inicio*/
 .inicio-div-derecha img{
     width: 30%;
     align-self: flex-start;
-    margin-bottom: auto;
+    margin: 20px auto 0 auto;
+
 }
 
 .inicio-div-derecha .texto{
@@ -245,6 +193,7 @@ color: #0B2545;
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    color: var(--color-texto);
 }
 
 .inicio-div-derecha .texto p{
@@ -265,31 +214,62 @@ color: #0B2545;
 }
 
 
-.div-general-inicio-medio .izquierda{
-    background-color: #fff;
-    width: 20%;
-    justify-items: center;
+    .div-general-inicio-medio .izquierda{
+        background-color: var(--color-secundario);
+        color: var(--color-texto);
+        width: 20%;
+        justify-items: center;
+    }
+
+    .div-general-inicio-medio .izquierda img{
+        width: 7%;
+    }
+
+    div.div-general-inicio-medio div.izquierda>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    div.div-general-inicio-medio div.izquierda>div span {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+    .div-general-inicio-medio .medio{
+        background-color: var(--color-secundario);
+        color: var(--color-texto);
+        width: 20%;
+        justify-items: center;
 }
 
-.div-general-inicio-medio .izquierda img{
-    width: 7%;
+
+    .div-general-inicio-medio .derecha{
+        background-color: var(--color-secundario);
+        color: var(--color-texto);
+        width: 20%;
+        justify-items: center;
+    }
+
+    .boton-inicio-derecha{
+    display: inline-block;
+    background-color: var(--color-boton);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border: 1px solid var(--color-boton);
 }
 
-.div-general-inicio-medio .izquierda span.texto{
-    margin-top: 40px;
-}
-
-
-
-.div-general-inicio-medio .medio{
-    background-color: #fff;
-    width: 20%;
-    justify-items: center;
-}
-
-
-.div-general-inicio-medio .derecha{
-    background-color: #fff;
-    width: 20%;
-    justify-items: center;
+.boton-inicio-derecha:hover {
+ background-color: var(--color-primario);
+color: var(--color-boton);
+border: 1px solid var(--color-boton);
 }

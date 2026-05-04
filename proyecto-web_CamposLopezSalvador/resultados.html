@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Hypermotion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="carrusel-equipos">
+        <div class="equipos-header">
+            <a href="https://www.albacetebalompie.es/" target="_blank"><img src="./img/logos-equipos/albacete.png" alt="Albacete"></a>
+            <a href="https://www.udalmeriasad.com/" target="_blank"><img src="./img/logos-equipos/almería.png" alt="Almería"></a>
+            <a href="https://www.fcandorra.com/es" target="_blank"><img src="./img/logos-equipos/andorra.png" alt="Andorra"></a>
+            <a href="https://www.burgoscf.es/" target="_blank"><img src="./img/logos-equipos/burgos.png" alt="Burgos"></a>
+            <a href="https://www.cadizcf.com/" target="_blank"><img src="./img/logos-equipos/cadiz.png" alt="Cádiz"></a>
+            <a href="https://www.cdcastellon.com/" target="_blank"><img src="./img/logos-equipos/castellón.png" alt="Castellón"></a>
+            <a href="https://www.adceutafc.com/" target="_blank"><img src="./img/logos-equipos/ceuta.png" alt="Ceuta"></a>
+            <a href="https://www.cordobacf.com/" target="_blank"><img src="./img/logos-equipos/cordoba.png" alt="Córdoba"></a>
+            <a href="https://www.cydleonesa.com/" target="_blank"><img src="./img/logos-equipos/cultural-leonesa.png" alt="Cultural Leonesa"></a>
+            <a href="https://www.rcdeportivo.es/" target="_blank"><img src="./img/logos-equipos/depor.png" alt="Deportivo"></a>
+            <a href="https://www.sdeibar.com/" target="_blank"><img src="./img/logos-equipos/eibar.png" alt="Eibar"></a>
+            <a href="https://www.granadacf.es/" target="_blank"><img src="./img/logos-equipos/granada.png" alt="Granada"></a>
+            <a href="https://www.sdhuesca.es/" target="_blank"><img src="./img/logos-equipos/huesca.png" alt="Huesca"></a>
+            <a href="https://www.udlaspalmas.es/" target="_blank"><img src="./img/logos-equipos/las_palmas.png" alt="Las Palmas"></a>
+            <a href="https://www.cdleganes.com/" target="_blank"><img src="./img/logos-equipos/leganes.png" alt="Leganés"></a>
+            <a href="https://www.malagacf.com/" target="_blank"><img src="./img/logos-equipos/malaga.png" alt="Málaga"></a>
+            <a href="https://www.cdmirandes.com/" target="_blank"><img src="./img/logos-equipos/mirandes.png" alt="Mirandés"></a>
+            <a href="https://www.realracingclub.es/" target="_blank"><img src="./img/logos-equipos/rancing-santander.png" alt="Racing Santander"></a>
+            <a href="https://fundazioa.realsociedad.eus/es/f" target="_blank"><img src="./img/logos-equipos/real-sociedad.png" alt="Real Sociedad B"></a>
+            <a href="https://www.realsporting.com/" target="_blank"><img src="./img/logos-equipos/sporting-gijon.png" alt="Sporting de Gijón"></a>
+            <a href="https://www.realvalladolid.es/" target="_blank"><img src="./img/logos-equipos/valladolid.png" alt="Valladolid"></a>
+            <a href="https://www.realzaragoza.com/" target="_blank"><img src="./img/logos-equipos/zaragoza.png" alt="Zaragoza"></a>
+            <a href="https://www.albacetebalompie.es/" target="_blank"><img src="./img/logos-equipos/albacete.png" alt="Albacete"></a>
+            <a href="https://www.udalmeriasad.com/" target="_blank"><img src="./img/logos-equipos/almería.png" alt="Almería"></a>
+            <a href="https://www.fcandorra.com/es" target="_blank"><img src="./img/logos-equipos/andorra.png" alt="Andorra"></a>
+            <a href="https://www.burgoscf.es/" target="_blank"><img src="./img/logos-equipos/burgos.png" alt="Burgos"></a>
+            <a href="https://www.cadizcf.com/" target="_blank"><img src="./img/logos-equipos/cadiz.png" alt="Cádiz"></a>
+            <a href="https://www.cdcastellon.com/" target="_blank"><img src="./img/logos-equipos/castellón.png" alt="Castellón"></a>
+            <a href="https://www.adceutafc.com/" target="_blank"><img src="./img/logos-equipos/ceuta.png" alt="Ceuta"></a>
+            <a href="https://www.cordobacf.com/" target="_blank"><img src="./img/logos-equipos/cordoba.png" alt="Córdoba"></a>
+            <a href="https://www.cydleonesa.com/" target="_blank"><img src="./img/logos-equipos/cultural-leonesa.png" alt="Cultural Leonesa"></a>
+            <a href="https://www.rcdeportivo.es/" target="_blank"><img src="./img/logos-equipos/depor.png" alt="Deportivo"></a>
+            <a href="https://www.sdeibar.com/" target="_blank"><img src="./img/logos-equipos/eibar.png" alt="Eibar"></a>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="logo">
+            <img src="img/logo-hypermotion.png" alt="Logo de Hypermotion">
+        </div>
+        <nav>
+            <ul class="lista-nav">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./equipos.html">Equipos</a></li>
+                <li><a href="./resultados.html" class="nav-activo">Resultados</a></li>
+                <li><a href="./index.html#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+         <div class="redes-sociales">
+            <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+
+        </div>       
+    </div>
+</header>
+
+<main>
+
+    <section class="top-main">
+        <p class="main-temporada">Temporada 2025/26</p>
+        <h1>Resultados y <span>Clasificación</span></h1>
+        <p class="top-main-sub">Consulta todos los resultados y la tabla de la Liga Hypermotion</p>
+    </section>
+
+    <section class="resultados-section">
+
+        <!-- Columna izquierda: Resultados por jornada -->
+        <div class="resultados-col">
+            <div class="resultados-jornada-header">
+                <h2>Jornada 34</h2>
+            </div>
+
+            <div class="tarjeta-inicio">
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/rancing-santander.png" alt="Racing Santander">
+                        <span>Racing Santander</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">3</span>
+                        <span class="separador">–</span>
+                        <span class="goles">1</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>Real Valladolid</span>
+                        <img src="./img/logos-equipos/valladolid.png" alt="Valladolid">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/cultural-leonesa.png" alt="Cultural Leonesa">
+                        <span>Cultural Leonesa</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">1</span>
+                        <span class="separador">–</span>
+                        <span class="goles">3</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>Córdoba CF</span>
+                        <img src="./img/logos-equipos/cordoba.png" alt="Córdoba">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/eibar.png" alt="Eibar">
+                        <span>SD Eibar</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">2</span>
+                        <span class="separador">–</span>
+                        <span class="goles">2</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>CD Mirandés</span>
+                        <img src="./img/logos-equipos/mirandes.png" alt="Mirandés">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/depor.png" alt="Deportivo">
+                        <span>RC Deportivo</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">3</span>
+                        <span class="separador">–</span>
+                        <span class="goles">1</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>UD Almería</span>
+                        <img src="./img/logos-equipos/almería.png" alt="Almería">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/granada.png" alt="Granada">
+                        <span>Granada CF</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">2</span>
+                        <span class="separador">–</span>
+                        <span class="goles">0</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>SD Huesca</span>
+                        <img src="./img/logos-equipos/huesca.png" alt="Huesca">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/malaga.png" alt="Málaga">
+                        <span>Málaga CF</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">1</span>
+                        <span class="separador">–</span>
+                        <span class="goles">1</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>Burgos CF</span>
+                        <img src="./img/logos-equipos/burgos.png" alt="Burgos">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/zaragoza.png" alt="Zaragoza">
+                        <span>Real Zaragoza</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">0</span>
+                        <span class="separador">–</span>
+                        <span class="goles">2</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>CD Leganés</span>
+                        <img src="./img/logos-equipos/leganes.png" alt="Leganés">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/cadiz.png" alt="Cádiz">
+                        <span>Cádiz CF</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">1</span>
+                        <span class="separador">–</span>
+                        <span class="goles">0</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>Sporting Gijón</span>
+                        <img src="./img/logos-equipos/sporting-gijon.png" alt="Sporting Gijón">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jornada 33 -->
+            <div class="resultados-jornada-header">
+                <h2>Jornada 33</h2>
+                <span class="main-temporada">5–7 Abr 2026</span>
+            </div>
+            <div class="data-card">
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/albacete.png" alt="Albacete">
+                        <span>Albacete BP</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">0</span>
+                        <span class="separador">–</span>
+                        <span class="goles">1</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>RC Deportivo</span>
+                        <img src="./img/logos-equipos/depor.png" alt="Deportivo">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/valladolid.png" alt="Valladolid">
+                        <span>Real Valladolid</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">2</span>
+                        <span class="separador">–</span>
+                        <span class="goles">2</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>Granada CF</span>
+                        <img src="./img/logos-equipos/granada.png" alt="Granada">
+                    </div>
+                </div>
+                <div class="resultado resultado-full">
+                    <div class="equipo-resultado">
+                        <img src="./img/logos-equipos/mirandes.png" alt="Mirandés">
+                        <span>CD Mirandés</span>
+                    </div>
+                    <div class="marcador marcador-grande">
+                        <span class="goles">1</span>
+                        <span class="separador">–</span>
+                        <span class="goles">3</span>
+                    </div>
+                    <div class="equipo-resultado derecha">
+                        <span>Racing Santander</span>
+                        <img src="./img/logos-equipos/rancing-santander.png" alt="Racing Santander">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Columna derecha: Clasificación completa -->
+        <div class="clasificacion-col">
+            <div class="data-card clasificacion-card-full">
+                <div class="data-card-header">
+                    <h3>Clasificación – Jornada 34</h3>
+                </div>
+                <table class="tabla-clasificacion tabla-clasificacion-full">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Equipo</th>
+                            <th>PJ</th>
+                            <th>G</th>
+                            <th>E</th>
+                            <th>P</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ascenso-directo">
+                            <td class="posicion">1</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/depor.png" alt="Deportivo">RC Deportivo</td>
+                            <td>34</td><td>22</td><td>6</td><td>6</td><td><strong>72</strong></td>
+                        </tr>
+                        <tr class="ascenso-directo">
+                            <td class="posicion">2</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/granada.png" alt="Granada">Granada CF</td>
+                            <td>34</td><td>20</td><td>8</td><td>6</td><td><strong>68</strong></td>
+                        </tr>
+                        <tr class="playoff">
+                            <td class="posicion">3</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/rancing-santander.png" alt="Racing">Racing Sant.</td>
+                            <td>34</td><td>18</td><td>7</td><td>9</td><td><strong>61</strong></td>
+                        </tr>
+                        <tr class="playoff">
+                            <td class="posicion">4</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/eibar.png" alt="Eibar">SD Eibar</td>
+                            <td>34</td><td>17</td><td>7</td><td>10</td><td><strong>58</strong></td>
+                        </tr>
+                        <tr class="playoff">
+                            <td class="posicion">5</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/malaga.png" alt="Málaga">Málaga CF</td>
+                            <td>34</td><td>16</td><td>8</td><td>10</td><td><strong>56</strong></td>
+                        </tr>
+                        <tr class="playoff">
+                            <td class="posicion">6</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/mirandes.png" alt="Mirandés">CD Mirandés</td>
+                            <td>34</td><td>15</td><td>9</td><td>10</td><td><strong>54</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">7</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/leganes.png" alt="Leganés">CD Leganés</td>
+                            <td>34</td><td>14</td><td>9</td><td>11</td><td><strong>51</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">8</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/cordoba.png" alt="Córdoba">Córdoba CF</td>
+                            <td>34</td><td>14</td><td>8</td><td>12</td><td><strong>50</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">9</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/burgos.png" alt="Burgos">Burgos CF</td>
+                            <td>34</td><td>13</td><td>9</td><td>12</td><td><strong>48</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">10</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/cadiz.png" alt="Cádiz">Cádiz CF</td>
+                            <td>34</td><td>12</td><td>10</td><td>12</td><td><strong>46</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">11</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/andorra.png" alt="Andorra">FC Andorra</td>
+                            <td>34</td><td>12</td><td>9</td><td>13</td><td><strong>45</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">12</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/real-sociedad.png" alt="R. Sociedad B">R. Sociedad B</td>
+                            <td>34</td><td>11</td><td>10</td><td>13</td><td><strong>43</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">13</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/huesca.png" alt="Huesca">SD Huesca</td>
+                            <td>34</td><td>11</td><td>9</td><td>14</td><td><strong>42</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">14</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/sporting-gijon.png" alt="Sporting">Sporting Gijón</td>
+                            <td>34</td><td>10</td><td>10</td><td>14</td><td><strong>40</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">15</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/las_palmas.png" alt="Las Palmas">UD Las Palmas</td>
+                            <td>34</td><td>10</td><td>9</td><td>15</td><td><strong>39</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">16</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/zaragoza.png" alt="Zaragoza">Real Zaragoza</td>
+                            <td>34</td><td>9</td><td>10</td><td>15</td><td><strong>37</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">17</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/castellón.png" alt="Castellón">CD Castellón</td>
+                            <td>34</td><td>9</td><td>9</td><td>16</td><td><strong>36</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="posicion">18</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/valladolid.png" alt="Valladolid">Real Valladolid</td>
+                            <td>34</td><td>8</td><td>10</td><td>16</td><td><strong>34</strong></td>
+                        </tr>
+                        <tr class="descenso">
+                            <td class="posicion">19</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/almería.png" alt="Almería">UD Almería</td>
+                            <td>34</td><td>7</td><td>10</td><td>17</td><td><strong>31</strong></td>
+                        </tr>
+                        <tr class="descenso">
+                            <td class="posicion">20</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/cultural-leonesa.png" alt="Cultural">Cultural Leonesa</td>
+                            <td>34</td><td>6</td><td>9</td><td>19</td><td><strong>27</strong></td>
+                        </tr>
+                        <tr class="descenso">
+                            <td class="posicion">21</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/albacete.png" alt="Albacete">Albacete BP</td>
+                            <td>34</td><td>5</td><td>8</td><td>21</td><td><strong>23</strong></td>
+                        </tr>
+                        <tr class="descenso">
+                            <td class="posicion">22</td>
+                            <td class="nombre-equipo"><img src="./img/logos-equipos/ceuta.png" alt="Ceuta">AD Ceuta FC</td>
+                            <td>34</td><td>4</td><td>6</td><td>24</td><td><strong>18</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <img src="img/logo-hypermotion.png" alt="Hypermotion" class="footer-logo">
+        <p>Copyright © 2026 Hypermotion. Todos los derechos reservados.</p>
+    </div>
+    <div class="nombre-footer"> 
+        <p>Salvador Campos López</p>
+    </div>
+        <div class="redes-sociales">
+            
+            <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+
+    </div>  
+</footer>
+
+</body>
+</html>
