@@ -55,7 +55,7 @@ header {
     display: flex;
     gap: 60px;
     width: max-content;
-    animation: scroll-equipos 600s linear infinite;
+    animation: scroll-equipos 600s linear infinite; /* Animación que hace que los distintos escudos se muevan horizontalmente durante 600 segundos */
     align-items: center;
     padding: 0 10px;
 }
@@ -67,9 +67,8 @@ header {
 .equipos-header a {
     display: flex;
     align-items: center;
-    opacity: 0.75;
-    transition: opacity 0.2s, transform 0.2s;
-    flex-shrink: 0;
+    transition: transform 0.2s; /* Transición para que el efecto del hover sea mas despacio */
+
 }
 
 .equipos-header a:hover {
@@ -79,13 +78,12 @@ header {
 .equipos-header img {
     height: 32px;
     width: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
+   
 }
 
 
 
-/*logo  */
+/*logo y menú */
 .header-main {
     display: flex;
     align-items: center;
@@ -97,7 +95,7 @@ header {
 
 .logo img {
     height: 60px;
-    width: auto;
+
 }
 
 .lista-nav {
@@ -109,21 +107,22 @@ header {
 .lista-nav li a {
     text-decoration: none;
     color: var(--color-texto);
-    font-size: 0.95rem;
+    font-size: 15px;
     font-weight: 500;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.5px;
     position: relative;
     padding-bottom: 4px;
 }
 
+/* Línea debajo de lista que aparece al hacer hover */
 .lista-nav li a::after {
-    content: '';
+    content: ''; /* Se pone así para poder mostrar solamente una línea */
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
     background-color: var(--color-cyan);
-    transition: width 0.25s ease;
+    transition: width 0.25s ease; /* Transición para que sea mas suave la aparición*/
     height: 2px;
     
 
@@ -133,7 +132,7 @@ header {
     width: 100%;
 }
 
-.lista-nav li a:hover {
+.lista-nav li a:hover,  .redes-sociales-movil li a:hover{
     color: var(--color-cyan);
 }
 
@@ -153,27 +152,9 @@ header {
     color: var(--color-cyan);
 }
 
-.sobre-nosotros{
-
-        justify-items: center;
-        background-color: var(--color-tarjeta);
-        padding: 60px;
+.redes-sociales-movil{
+    display: none;
 }
-
-.sobre-nosotros>details{
-    margin-bottom: 20px;
-    cursor: pointer;
-    
-    
-}
-
-details[open] {
-   justify-items: center;
-}
-details[open] p {
-  margin-top: 10px;
-}
-
 
 
 .main {
@@ -192,24 +173,22 @@ details[open] p {
 
 .main-temporada {
     display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
+    font-size: 12px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--color-cyan);
-    background: rgba(0, 194, 199, 0.1);
-    border: 1px solid rgba(0, 194, 199, 0.3);
-    border-radius: 100px;
-    padding: 4px 14px;
+    border: 1px solid var(--color-boton);
+    border-radius: 5px;
+    padding: 7px 14px;
     margin-bottom: 24px;
 }
 
 .main-arriba-izquierda h1 {
-    font-size: clamp(2.6rem, 5vw, 4.2rem);
+    font-size: 67px;
     line-height: 1.05;
     color: var(--color-texto);
     margin-bottom: 20px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     width: 90%;
 }
 
@@ -218,7 +197,7 @@ details[open] p {
 }
 
 .main-arriba-texto {
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--color-texto-muted);
     line-height: 1.6;
     margin-bottom: 36px;
@@ -236,7 +215,7 @@ details[open] p {
     background-color: var(--color-boton);
     color: #fff;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 8px;
     padding: 12px 28px;
@@ -254,7 +233,7 @@ details[open] p {
     background-color: transparent;
     color: var(--color-cyan);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 8px;
     padding: 12px 28px;
@@ -267,7 +246,7 @@ details[open] p {
     color: var(--color-primario);
 }
 
-/* Hero derecha */
+/* Main derecha */
 .main-derecha {
     flex: 1;
     display: flex;
@@ -281,7 +260,7 @@ details[open] p {
     border-radius: 16px;
     overflow: hidden;
     border: 1.5px solid var(--color-card-borde);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 60px #00000066;
 }
 
 .div-imagen-main-derecha img {
@@ -327,9 +306,9 @@ details[open] p {
 }
 
 .tarjeta-inicio-header h3 {
-    font-size: 0.85rem;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 1.6px;
     text-transform: uppercase;
     color: var(--color-texto-muted);
 }
@@ -341,14 +320,38 @@ details[open] p {
     flex-shrink: 0;
 }
 
-/* --- Resultados --- */
+.sobre-nosotros{
+
+        justify-items: center;
+        background-color: var(--color-tarjeta);
+        padding: 60px;
+}
+
+.sobre-nosotros>details{
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+    
+}
+
+details[open] {
+   justify-items: center;
+}
+details[open] p {
+  margin-top: 10px;
+}
+
+
+
+
+/*  últimos resultados  */
 .resultado {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid #ffffff0d;
 }
 
 .resultado:last-of-type {
@@ -360,10 +363,9 @@ details[open] p {
     align-items: center;
     gap: 8px;
     flex: 1;
-    font-size: 0.82rem;
+    font-size: 13px;
     font-weight: 500;
     color: var(--color-texto);
-    white-space: nowrap;
     overflow: hidden;
 }
 
@@ -384,20 +386,20 @@ details[open] p {
     align-items: center;
     gap: 4px;
     flex-shrink: 0;
-    background: rgba(0, 0, 0, 0.25);
+    background: #00000040;
     border-radius: 6px;
     padding: 4px 10px;
 }
 
 .goles {
-    font-size: 1.1rem;
+    font-size: 18px;
     color: var(--color-texto);
     min-width: 16px;
     text-align: center;
 }
 
 .separador {
-    font-size: 0.9rem;
+    font-size: 14px;
     color: var(--color-texto-muted);
     padding: 0 2px;
 }
@@ -408,7 +410,7 @@ details[open] p {
     align-items: center;
     gap: 10px;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid #ffffff0d;
 }
 
 .proximo:last-of-type {
@@ -416,11 +418,11 @@ details[open] p {
 }
 
 .proximo-fecha {
-    font-size: 0.7rem;
+    font-size: 11px;
     font-weight: 600;
     color: var(--color-cyan);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.8px;
     width: 58px;
     flex-shrink: 0;
     line-height: 1.3;
@@ -428,7 +430,7 @@ details[open] p {
 }
 
 .proximo-hora {
-    font-size: 0.78rem;
+    font-size: 12px;
     font-weight: 700;
     color: var(--color-texto-muted);
     width: 38px;
@@ -449,7 +451,7 @@ details[open] p {
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    font-size: 0.72rem;
+    font-size: 12px;
     color: var(--color-texto);
     text-align: center;
     width: 52px;
@@ -462,16 +464,16 @@ details[open] p {
 }
 
 .vs {
-    font-size: 0.75rem;
+    font-size: 12px;
     color: var(--color-texto-muted);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.8px;
 }
 
 /* --- Clasificación --- */
 .tabla-clasificacion {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.82rem;
+    font-size: 13px;
 }
 
 .tabla-clasificacion thead tr {
@@ -481,9 +483,9 @@ details[open] p {
 .tabla-clasificacion th {
     padding: 6px 8px;
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
     color: var(--color-texto-muted);
 }
@@ -500,7 +502,7 @@ details[open] p {
 
 .tabla-clasificacion>tbody>tr.ascenso-directo,
 .tabla-clasificacion>tbody>tr.playoff {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid #ffffff0a;
 
 }
 
@@ -522,7 +524,7 @@ details[open] p {
 .tabla-clasificacion td.posicion {
     font-weight: 700;
     color: var(--color-texto-muted);
-    font-size: 0.78rem;
+    font-size: 13px;
 }
 
 
@@ -561,10 +563,10 @@ details[open] p {
 }
 
 .top-main h1 {
-    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-size: 64px;
     line-height: 1.05;
     margin: 12px 0 16px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
 }
 
 .top-main h1 span {
@@ -572,7 +574,7 @@ details[open] p {
 }
 
 .top-main-sub {
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--color-texto-muted);
     line-height: 1.6;
 }
@@ -580,16 +582,18 @@ details[open] p {
 /*Equipos*/
 
 .equipos-arriba-tabla{
-    display: flex;
+    display: grid;
     gap: 20px;
     justify-self: center;
     width: 100%;
     justify-content: center;
     margin: 0 0 2% 0;
+    grid-auto-flow: column;
+    justify-content: center;
 }
 
 .equipos-arriba-tabla>div{
-    width: 10%;
+    width: 100%;
 }
 
 .equipos-grid-section {
@@ -643,19 +647,19 @@ details[open] p {
 }
 
 .equipo-card-nombre {
-    font-size: 0.85rem;
+    font-size: 13px;
     font-weight: 700;
     color: var(--color-texto);
 }
 
 .equipo-card-ciudad {
-    font-size: 0.72rem;
+    font-size: 12px;
     color: var(--color-texto-muted);
     text-align: center;
 }
 
 .equipo-card-posicion {
-    font-size: 0.80rem;
+    font-size: 13px;
     color: #b6bfd3;
 }
 
@@ -684,8 +688,8 @@ details[open] p {
 }
 
 .resultados-jornada-header h2 {
-    font-size: 1.5rem;
-    letter-spacing: 0.05em;
+    font-size: 24px;
+    letter-spacing: 0.8px;
 }
 
 .resultado-full {
@@ -697,7 +701,7 @@ details[open] p {
 }
 
 .marcador-grande .goles {
-    font-size: 1.3rem;
+    font-size: 20px;
 }
 
 .tabla-clasificacion-full th,
@@ -730,21 +734,21 @@ details[open] p {
 
 
 .form-group label {
-    font-size: 0.8rem;
+    font-size: 12px;
     font-weight: 600;
     color: var(--color-texto-muted);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.8px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    background: rgba(0, 0, 0, 0.2);
+    background: #00000033;
     border: 1px solid var(--color-card-borde);
     border-radius: 8px;
     color: var(--color-texto);
     font-family: 'Lato', sans-serif;
-    font-size: 0.9rem;
+    font-size: 14px;
     padding: 10px 14px;
     transition: border-color 0.2s;
 }
@@ -799,7 +803,7 @@ footer {
 }
 
 footer p {
-    font-size: 0.8rem;
+    font-size: 12px;
     color: var(--color-texto-muted);
 }
 
@@ -809,7 +813,7 @@ footer p {
 }
 
 .nombre-footer p{
-  font-size: 1rem;
+  font-size: 16px;
     color: var(--color-texto-muted);
 }
 
@@ -824,15 +828,18 @@ footer>div.redes-sociales{
         display: none;
     }
     header, main, .footer{
-        width: 100%!important;
+    width: 146% !important;
     }
   
 }
 
-@media (max-width: 435px) {
+@media (max-width: 467px) {
     header, main, footer{
-        width: 112%!important;
+    width: 146% !important;
     }
+}
+
+@media (max-width: 435px) {
     .sobre-nosotros{
         width: 100%!important;
     }
@@ -871,9 +878,9 @@ footer>div.redes-sociales{
     .main-botones{
         justify-content: center;
     }
-    header, footer, .sobre-nosotros{
+    header, footer{
 
-        width: 100%;
+      
     }
     .Seccion-datos-inicio{
         width: 100%;
@@ -889,6 +896,9 @@ footer>div.redes-sociales{
     .mapa-contacto>p>iframe{
         width: 100%;
 
+    }
+    .equipos-arriba-tabla{
+       grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -907,6 +917,26 @@ footer>div.redes-sociales{
     .contacto-section {
         padding: 0 10%;
     }
+}
+
+@media (max-width: 800px){
+
+    .redes-sociales{
+        display: none;
+    }
+
+    .redes-sociales-movil{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        justify-self: center;
+        margin: 0 0 20px 0;
+    }
+    .redes-sociales-movil>li>a{
+        text-decoration: none;
+        color: var(--color-texto);
+    }
+
 }
 
 @media (max-width: 1000px) {
